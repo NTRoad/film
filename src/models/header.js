@@ -7,7 +7,7 @@ export default {
       isLogin: false,
       userId: null,
       userImg: null,
-      logName: '瞎鸡巴看',
+      logName: 'dy资料站',
       logTitle: '全世界最牛逼的电影网站',
       showNav:false,
       navList: [
