@@ -1,0 +1,84 @@
+.filmList{
+    margin-top: 40px;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+    .listHeader{
+        height: 50px;
+        h1{
+            font-size: 20px;
+            float: left
+        }
+        a{
+            float: right;
+            color: #2f7da6;
+            font-size: 14px; 
+        }
+    }
+    .listUl{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        li{
+            width: 30%;
+            a{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                font-size: 14px;
+                height: 35px;
+                text-align: center;
+                margin-top: 5px;
+                em{
+                    color: #2f7da6;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:541px){
+    .content{
+        width: 80%;
+        .listUl{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+            li{
+                p{
+                    font-size: 16px;
+                    height: 40px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:890px){
+    .content{
+        width: 75%;
+        .listUl{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+            li{
+                width: 22%;
+                p{
+                    font-size: 16px;
+                    height: 40px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

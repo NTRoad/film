@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+.log{
+    background: #ddd;
+    padding:10px 120px;
+    position: relative;
+}
+.content{
+    float: right;
+    width: 400px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    .logHeader{
+        width: 100%;
+        height: 50px;
+        div{
+            float: left;
+            width: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .notActive{
+            background: #bbb;
+        }
+    }
+    .loginCom{
+        width: 100%;
+        padding: 40px;
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0 20px;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .loginName,.loginPassword{
+            border: #ccc 1px solid;
+        }
+    }
+    .registerCom{
+        width: 100%;
+        padding: 40px;
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0 20px;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type=text],input[type=password]{
+            border: #ccc 1px solid;
+        }
+        span{
+            font-size: 12px;
+            display: block;
+            height: 15px;
+            line-height: 15px;
+        }
+        .format{
+            color: green;
+        }
+        .notFormat{
+            color: red;
+        }
+        .registerCode{
+            width: 40%;
+        }
+        .getCode{
+            width: 35%;
+            margin-left: 20px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media (max-width:890px){
+
+}
+@media (max-width:540px){
+    .log{
+        padding:70px 20px;
+    }
+    .content{
+        width: 280px;
+        margin:0 auto;
+        float: none;
+        .logHeader{
+            div{
+                font-size: 20px;
+            }
+        }
+        .loginCom{
+            padding: 40px;
+            input{
+                padding: 0 5px;
+            }
+        }
+        .registerCom{
+            padding: 40px;
+            input{
+                padding: 0 5px;
+            }
+            .registerCode{
+                width: 48%;
+            }
+            .getCode{
+                margin-left: 10px;
+                width: 45%;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body, :global(#root) {
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+li{list-style: none;}
+
+img{
+  vertical-align: top;
+  border: none;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+.clear{zoom: 1;}
+.clear:after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}

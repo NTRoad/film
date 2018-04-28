@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    height: 90px;background: #15191e;
+    border-bottom: 1px solid #fff;
+}
+.content{
+    padding:10px 120px;
+    .log{
+        float: left;
+        display: block;
+        color: #fff;
+        span{
+            font-size: 40px;display: block;
+        }
+        em{
+            font-size: 12px;letter-spacing: 2px;
+        }
+    }   
+    .user{
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        display: block;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    } 
+    .menu{
+
+    }
+    .nav{
+        float: right;
+        height: 70px;
+        margin-right: 30px;
+        li{
+            float: left;
+            margin: 0 20px;
+            line-height: 70px;
+            font-size: 20px;
+            a{
+                display: block;
+                height: 100%;
+                color: #fff;
+            }
+            a:hover{
+                color: #2f7da6;
+            }
+            .active{
+                color: #2f7da6;
+            }
+        }
+    }
+}
+@media (max-width:890px){
+    .content{
+        padding:10px 35px;
+        .log{
+            span{
+                font-size: 30px;
+                margin-top: 5px;
+            }
+            em{
+                letter-spacing: 1px;
+            }
+        }   
+        .nav{
+            margin-right: 20px;
+            li{
+                margin: 0 10px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width:540px){
+    .content{
+        padding:10px 20px;  
+        .menu{
+            float: right;
+            width: 30px;
+            height: 30px;
+            background: url("../../../assets/menu.png");
+            background-size: 30px 30px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        .nav{
+            position: absolute;
+            top: 90px;
+            left: 0;
+            background: #15191e;
+            width: 100%;
+            height: 0; 
+            overflow: hidden;
+            z-index: 999;
+            li{
+                width: 100%;
+                height: 70px;
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+        .show{
+            height: auto;
+        }
+    }
+}

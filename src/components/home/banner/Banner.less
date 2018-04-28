@@ -1,0 +1,154 @@
+.banner{
+    
+}
+@keyframes liFadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes liFadeOut{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes spanFadeIn{
+    0%{opacity: 0.6;}
+    100%{opacity: 1;}
+}
+@keyframes spanFadeOut{
+    0%{opacity: 1;}
+    100%{opacity: 0.6;}
+}
+.content{
+    width: 90%;
+    margin: 40px auto;
+    .showImg{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        .bigUl{
+            height: 100%;
+            position: relative;
+            li{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+                height: 100%;
+                a{
+                    display: block;
+                    height: 100%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .liIn{
+                animation-name: liFadeIn;
+                animation-duration: 1s;
+                opacity: 1;
+            }
+            .liOut{
+                animation-name: liFadeOut;
+                animation-duration: 1s;
+            }
+        }
+        .subs{
+            position: absolute;
+            z-index: 1000;
+            bottom: 10px;
+            left: 10px;
+            span{
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                background: #fff;
+                margin-left: 20px;
+                border-radius: 50%;
+                opacity: 0.6;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            .spanIn{
+                animation-name: spanFadeIn;
+                animation-duration: 1s;
+                opacity: 1;
+            }
+            .spanOut{
+                animation-name: spanFadeOut;
+                animation-duration: 1s;
+            }
+        }
+    }
+    .showText{
+        color: #2f7da6;
+        background: #434343;
+        padding: 20px;
+        font-size: 14px;
+        height: 300px;
+        em{
+            font-size: 12px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            margin-top: 5px;
+            span{
+                color: #fff;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width:540px){
+    .content{
+        width: 80%;
+        .showImg{
+            height: 400px;
+        }
+        .showText{
+            padding: 40px;
+            line-height: 30px;
+            font-size: 18px;
+            h2{
+                font-size: 24px;
+            }
+            p{
+                margin-top: 10px;
+                span{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1000px){
+    .content{
+        width: 75%;
+        margin: 60px auto;
+        height: 500px;
+        .showImg{
+            width: 55%;
+            height: 100%;
+            float: left;
+            .subs{
+                span{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 25px;
+                }
+            }
+        }
+        .showText{
+            width: 45%;
+            float: left;
+            height: 100%;
+        }
+    }
+}
