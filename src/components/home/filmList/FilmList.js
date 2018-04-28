@@ -14,7 +14,7 @@ class FilmList extends React.Component{
     // 270:39
     const data = this.props.data;
     const renderLis = () => {
-      data.map((item, index) => {
+      return data.map((item, index) => {
         if(index<12){
           return (
             <li key={index}>
